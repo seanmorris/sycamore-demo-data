@@ -28,6 +28,7 @@ jobs:
         env:
           DATABASE_ORIGIN: ${{ secrets.DATABASE_ORIGIN }} \
           TEMPLATE_ORIGIN: ${{ secrets.TEMPLATE_ORIGIN }} \
+          HUB_ORIGIN: ${{ secrets.HUB_ORIGIN }}
           AUTHOR: ${{ secrets.AUTHOR }}
 
       - name: Add any newly created relevant files.
