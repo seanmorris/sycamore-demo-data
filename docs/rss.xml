@@ -4,12 +4,12 @@
 	<title>Sean Morris</title>
 	<link>https://sycamore.seanmorr.is</link>
 	<description>Sycamore origin for Sean Morris</description>
-	<item>
+	<image>
 		<title>messages/hate-crap.jpg</title>
-		<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sycamore-data.seanmorr.is/messages/hate-crap.jpg" />
+		<url>{TEMPLATE_ORIGIN}/messages/hate-crap.jpg.smsg</url>
 		<link>https://sycamore.seanmorr.is/messages/hate-crap.jpg.smsg</link>
 		<guid>https://sycamore.seanmorr.is/messages/hate-crap.jpg.smsg</guid>
-	</item>
+	</image>
 	<item>
 		<title>hello crypto!!!</title>
 		<link>https://sycamore.seanmorr.is/messages/hello-crypto.md.smsg</link>
