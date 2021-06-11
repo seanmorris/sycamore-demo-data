@@ -34,8 +34,8 @@ for MESSAGE in ${MESSAGES}; do {
 		cat << EOF
 	<atom:link href="${DATABASE_ORIGIN}/rss.xml">
 		<title>$( cat ${MESSAGE} | cut -c1-140 )</title>
-		<link>${DATABASE_ORIGIN}/${MESSAGE}.smsg</link>
-		<guid>${DATABASE_ORIGIN}/${MESSAGE}.smsg</guid>
+		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
+		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</item>
 EOF
 	}
@@ -45,8 +45,8 @@ EOF
 	<atom:image>
 		<url>${DATABASE_ORIGIN}/${MESSAGE}</url>
 		<title>${MESSAGE}</title>
-		<link>${DATABASE_ORIGIN}/${MESSAGE}.smsg</link>
-		<guid>${DATABASE_ORIGIN}/${MESSAGE}.smsg</guid>
+		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
+		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</image>
 EOF
 	}
