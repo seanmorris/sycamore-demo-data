@@ -5,43 +5,43 @@
 	<link>https://sycamore.seanmorr.is</link>
 	<description>Sycamore origin for Sean Morris</description>
 	<item>
-		<description>TEST!</description>
+		<title>TEST!!</title>
 		<link>https://sycamore-data.seanmorr.is/messages/TEST.md.smsg</link>
 	</item>
 	<item>
-		<description>hello crypto!!!</description>
+		<title>hello crypto!!!</title>
 		<link>https://sycamore-data.seanmorr.is/messages/hello-crypto.md.smsg</link>
 	</item>
 	<item>
-		<description>Hello, world!</description>
+		<title>Hello, world!</title>
 		<link>https://sycamore-data.seanmorr.is/messages/hello-world.md.smsg</link>
 	</item>
 	<item>
-		<description>dGVzdCBwb3N0</description>
+		<title>dGVzdCBwb3N0</title>
 		<link>https://sycamore-data.seanmorr.is/messages/post-1623227310262.md.smsg</link>
 	</item>
 	<item>
-		<description>Test post</description>
+		<title>Test post</title>
 		<link>https://sycamore-data.seanmorr.is/messages/post-1623227459465.md.smsg</link>
 	</item>
 	<item>
-		<description>This is a test post.</description>
+		<title>This is a test post.</title>
 		<link>https://sycamore-data.seanmorr.is/messages/post-1623227543116.md.smsg</link>
 	</item>
 	<item>
-		<description>UI test</description>
+		<title>UI test</title>
 		<link>https://sycamore-data.seanmorr.is/messages/post-1623350361674.md.smsg</link>
 	</item>
 	<item>
-		<description>i can make a post</description>
+		<title>i can make a post</title>
 		<link>https://sycamore-data.seanmorr.is/messages/post-1623351915716.md.smsg</link>
 	</item>
 	<item>
-		<description>This is a post</description>
+		<title>This is a post</title>
 		<link>https://sycamore-data.seanmorr.is/messages/post.md.smsg</link>
 	</item>
 	<item>
-		<description>Some text here.</description>
+		<title>Some text here.</title>
 		<link>https://sycamore-data.seanmorr.is/messages/test.txt.smsg</link>
 	</item>
 </channel>
