@@ -39,16 +39,16 @@ for MESSAGE in ${MESSAGES}; do {
 EOF
 	}
 
-	[ $MIME = imag ] && {
-		cat << EOF
-	<image>
-		<title>${MESSAGE}</title>
-		<url>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</url>
-		<link>${TEMPLATE_ORIGIN}/$(basename ${MESSAGE}).smsg</link>
-		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}</guid>
-	</image>
-EOF
-	}
+# 	[ $MIME = imag ] && {
+# 		cat << EOF
+# 	<image>
+# 		<title>${MESSAGE}</title>
+# 		<url>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</url>
+# 		<link>${TEMPLATE_ORIGIN}/$(basename ${MESSAGE}).smsg</link>
+# 		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}</guid>
+# 	</image>
+# EOF
+#	}
 
 } done;
 
