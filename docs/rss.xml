@@ -4,7 +4,7 @@
 	<icon>https://sycamore.seanmorr.is/favicon.ico</icon>
 	<link>https://sycamore.seanmorr.is</link>
 	<description>Sycamore origin for Sean Morris</description>
-	<image>
+	<entry>
 		<title>messages/hate-crap.jpg</title>
 		<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sycamore-data.seanmorr.is/messages/hate-crap.jpg" />
 		<author>
@@ -13,7 +13,7 @@
 		<icon>https://sycamore.seanmorr.is/favicon.ico</icon>
 		<link>https://sycamore.seanmorr.is/messages/hate-crap.jpg.smsg</link>
 		<guid>https://sycamore.seanmorr.is/messages/hate-crap.jpg.smsg</guid>
-	</image>
+	</entry>
 	<entry>
 		<title>hello crypto!!!</title>
 		<author>
