@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail;
+set -euxo pipefail;
 
 test -f .env && {
 	set -a;
@@ -23,18 +23,16 @@ cat << EOF
 	<description>Sycamore origin for ${AUTHOR}</description>
 EOF
 
-
-MESSAGES=$(find messages/ -type f -printf "%T@\t%Tc\t%p\n" | grep -v '\/\.' | sort -n | cut -f 3);
+MESSAGES=$(find messages -type f -printf "%T@\t%Tc\t%p\n" | grep -v '\/\.' | sort -n | cut -f 3);
 
 for MESSAGE in ${MESSAGES}; do {
 
 	MIME=$(mimetype ${MESSAGE} | cut -d ' ' -f 2 | cut -c1-4 );
 
-
 	[ $MIME = text ] && {
 		cat << EOF
 	<item>
-		<description>$( cat ${MESSAGE} cut -c1-140 )</description>
+		<description>$( cat ${MESSAGE} | cut -c1-140 )</description>
 		<link>${DATABASE_ORIGIN}/${MESSAGE}.smsg</link>
 	</item>
 EOF
