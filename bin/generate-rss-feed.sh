@@ -19,7 +19,6 @@ cat << EOF
 <rss version="2.0">
 <channel>
 	<title>${AUTHOR}</title>
-	<icon>${TEMPLATE_ORIGIN}/favicon.ico</icon>
 	<link>${TEMPLATE_ORIGIN}</link>
 	<description>Sycamore origin for ${AUTHOR}</description>
 EOF
@@ -32,7 +31,7 @@ for MESSAGE in ${MESSAGES}; do {
 
 	[ $MIME = text ] && {
 		cat << EOF
-	<entry>
+	<item>
 		<title>$( cat ${MESSAGE} | cut -c1-140 )</title>
 		<author>
 			<name>${AUTHOR}</name>
@@ -40,13 +39,13 @@ for MESSAGE in ${MESSAGES}; do {
 		<icon>${TEMPLATE_ORIGIN}/favicon.ico</icon>
 		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
 		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
-	</entry>
+	</item>
 EOF
 	}
 
 	[ $MIME = imag ] && {
 		cat << EOF
-	<entry>
+	<item>
 		<title>${MESSAGE}</title>
 		<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="${DATABASE_ORIGIN}/${MESSAGE}" />
 		<author>
@@ -55,7 +54,7 @@ EOF
 		<icon>${TEMPLATE_ORIGIN}/favicon.ico</icon>
 		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
 		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
-	</entry>
+	</item>
 EOF
 	}
 
