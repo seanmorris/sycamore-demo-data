@@ -34,7 +34,7 @@ for MESSAGE in ${MESSAGES}; do {
 	<entry>
 		<title>$( cat ${MESSAGE} | cut -c1-140 )</title>
 		<author>
-			<name>${AUTHOR}</name
+			<name>${AUTHOR}</name>
 		</author>
 		<icon>${TEMPLATE_ORIGIN}/favicon.ico</icon>
 		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
