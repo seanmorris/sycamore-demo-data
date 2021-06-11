@@ -43,7 +43,7 @@ EOF
 		cat << EOF
 	<image>
 		<title>${MESSAGE}</title>
-		<url>{TEMPLATE_ORIGIN}/${MESSAGE}.smsg</url>
+		<url>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</url>
 		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
 		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</image>
