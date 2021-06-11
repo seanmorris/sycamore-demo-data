@@ -34,7 +34,7 @@ for MESSAGE in ${MESSAGES}; do {
 	<item>
 		<title>$( cat ${MESSAGE} | cut -c1-140 )</title>
 		<link>${TEMPLATE_ORIGIN}?show=${MESSAGE}.smsg</link>
-		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
+		<guid>${TEMPLATE_ORIGIN}?show=${MESSAGE}.smsg</guid>
 	</item>
 EOF
 	} || {
@@ -42,7 +42,7 @@ EOF
 	<item>
 		<title>${MESSAGE}</title>
 		<link>${TEMPLATE_ORIGIN}?show=${MESSAGE}.smsg</link>
-		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
+		<guid>${TEMPLATE_ORIGIN}?show=${MESSAGE}.smsg</guid>
 	</item>
 EOF
 	}
