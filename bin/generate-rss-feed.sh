@@ -16,9 +16,10 @@ test -f .env && {
 
 cat << EOF
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 	<title>${AUTHOR}</title>
+	<icon>${TEMPLATE_ORIGIN}/favicon.ico</icon>
 	<link>${TEMPLATE_ORIGIN}</link>
 	<description>Sycamore origin for ${AUTHOR}</description>
 EOF
@@ -31,10 +32,20 @@ for MESSAGE in ${MESSAGES}; do {
 
 	[ $MIME = text ] && {
 		cat << EOF
-	<item>
+	<atom:link href="${DATABASE_ORIGIN}/rss.xml">
 		<title>$( cat ${MESSAGE} | cut -c1-140 )</title>
 		<link>${DATABASE_ORIGIN}/${MESSAGE}.smsg</link>
+		<guid>${DATABASE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</item>
+EOF
+[ $MIME = imag ] && {
+		cat << EOF
+	<atom:image>
+		<url>${DATABASE_ORIGIN}/${MESSAGE}</url>
+		<title>${MESSAGE}</title>
+		<link>${DATABASE_ORIGIN}/${MESSAGE}.smsg</link>
+		<guid>${DATABASE_ORIGIN}/${MESSAGE}.smsg</guid>
+	</image>
 EOF
 	}
 } done;
