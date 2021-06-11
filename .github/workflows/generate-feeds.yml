@@ -24,7 +24,7 @@ jobs:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
       
       - name: Generate static content.
-        run:  make docs/feeds/main.sfd docs/index.html
+        run:  make docs/feeds/main.sfd docs/index.html docs/rss.xml
         env:
           DATABASE_ORIGIN: ${{ secrets.DATABASE_ORIGIN }}
           TEMPLATE_ORIGIN: ${{ secrets.TEMPLATE_ORIGIN }}

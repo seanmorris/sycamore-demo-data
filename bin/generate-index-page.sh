@@ -35,8 +35,9 @@ uid:${USER_ID}
 <img src = "${TEMPLATE_ORIGIN}/avatar.jpg" />
 $(date +%s)
 <a href  = "${TEMPLATE_ORIGIN}">profile</a>
-<a href  = "/public-key.pem">public-key</a>
-<a href  = "/feeds/main.sfd">feed</a>
+<a href  = "${DATABASE_ORIGIN}/public-key.pem">public-key</a>
+<a href  = "${DATABASE_ORIGIN}/feeds/main.sfd">feed</a>
+<a href  = "${DATABASE_ORIGIN}/rss.xml">feed</a>
 <a href  = "${HUB_ORIGIN}">hub</a>
 </body>
 EOF
