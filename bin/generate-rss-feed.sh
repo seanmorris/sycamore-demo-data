@@ -33,7 +33,7 @@ for MESSAGE in ${MESSAGES}; do {
 		cat << EOF
 	<item>
 		<title>$( cat ${MESSAGE} | cut -c1-140 )</title>
-		<atom:link rel="self">${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
+		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
 		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</item>
 EOF
@@ -44,7 +44,7 @@ EOF
 	<item>
 		<title>${MESSAGE}</title>
 		<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="${DATABASE_ORIGIN}/${MESSAGE}" />
-		<atom:link rel="self">${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
+		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
 		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</item>
 EOF
