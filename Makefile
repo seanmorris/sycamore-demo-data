@@ -2,7 +2,7 @@
 
 .PHONY: all clean sign-messages factory-reset
 
-MESSAGE_SOURCES=$(shell find ./messages/ -type f | grep -i '\/\.')
+MESSAGE_SOURCES=$(shell find ./messages/ -type f | grep -v '\/\.')
 MESSAGE_TARGETS=${MESSAGE_SOURCES:./messages/%=./docs/messages/%.smsg}
 
 all: docs/public-key.pem docs/contact-card.json docs/contact-card.json.smsg sign-messages
