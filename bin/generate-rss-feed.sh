@@ -46,8 +46,12 @@ EOF
 	[ $MIME = imag ] && {
 		cat << EOF
 	<image>
-		<url>${DATABASE_ORIGIN}/${MESSAGE}</url>
 		<title>${MESSAGE}</title>
+		<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="${DATABASE_ORIGIN}/${MESSAGE}" />
+		<author>
+			<name>${AUTHOR}</name>
+		</author>
+		<icon>${TEMPLATE_ORIGIN}/favicon.ico</icon>
 		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
 		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</image>
