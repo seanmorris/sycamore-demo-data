@@ -5,3 +5,61 @@
 	<icon>https://sycamore.seanmorr.is/favicon.ico</icon>
 	<link>https://sycamore.seanmorr.is</link>
 	<description>Sycamore origin for Sean Morris</description>
+	<atom:image>
+		<url>https://sycamore-data.seanmorr.is/messages/hate-crap.jpg</url>
+		<title>messages/hate-crap.jpg</title>
+		<link>https://sycamore-data.seanmorr.is/messages/hate-crap.jpg.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/hate-crap.jpg.smsg</guid>
+	</image>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>hello crypto!!!</title>
+		<link>https://sycamore-data.seanmorr.is/messages/hello-crypto.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/hello-crypto.md.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>Hello, world!</title>
+		<link>https://sycamore-data.seanmorr.is/messages/hello-world.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/hello-world.md.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>dGVzdCBwb3N0</title>
+		<link>https://sycamore-data.seanmorr.is/messages/post-1623227310262.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/post-1623227310262.md.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>Test post</title>
+		<link>https://sycamore-data.seanmorr.is/messages/post-1623227459465.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/post-1623227459465.md.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>This is a test post.</title>
+		<link>https://sycamore-data.seanmorr.is/messages/post-1623227543116.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/post-1623227543116.md.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>UI test</title>
+		<link>https://sycamore-data.seanmorr.is/messages/post-1623350361674.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/post-1623350361674.md.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>i can make a post</title>
+		<link>https://sycamore-data.seanmorr.is/messages/post-1623351915716.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/post-1623351915716.md.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>Some text here.</title>
+		<link>https://sycamore-data.seanmorr.is/messages/test.txt.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/test.txt.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>This is a post</title>
+		<link>https://sycamore-data.seanmorr.is/messages/post.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/post.md.smsg</guid>
+	</item>
+	<atom:link href="https://sycamore-data.seanmorr.is/rss.xml">
+		<title>TEST!!</title>
+		<link>https://sycamore-data.seanmorr.is/messages/TEST.md.smsg</link>
+		<guid>https://sycamore-data.seanmorr.is/messages/TEST.md.smsg</guid>
+	</item>
+</channel>
+</rss>

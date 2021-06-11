@@ -38,7 +38,9 @@ for MESSAGE in ${MESSAGES}; do {
 		<guid>${DATABASE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</item>
 EOF
-[ $MIME = imag ] && {
+	}
+
+	[ $MIME = imag ] && {
 		cat << EOF
 	<atom:image>
 		<url>${DATABASE_ORIGIN}/${MESSAGE}</url>
@@ -48,6 +50,7 @@ EOF
 	</image>
 EOF
 	}
+
 } done;
 
 cat << EOF
