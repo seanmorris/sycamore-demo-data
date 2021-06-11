@@ -18,7 +18,7 @@ INPUT=$1;
 
 [[ -f ${INPUT} ]] || exit;
 
-PUBLIC_KEY_URL=${DATABASE_ORIGIN}/public-key;
+PUBLIC_KEY_URL=${DATABASE_ORIGIN}/public-key.pem;
 BASE_INPUT=${1#messages/};
 USER_ID=$(shasum -a256 .ssh/public-key.pem | cut -d " " -f 1);
 TYPE=$(file -ib --mime-type ${INPUT});
