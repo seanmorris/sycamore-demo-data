@@ -33,16 +33,16 @@ for MESSAGE in ${MESSAGES}; do {
 		cat << EOF
 	<item>
 		<title>$( cat ${MESSAGE} | cut -c1-140 )</title>
-		<link>${TEMPLATE_ORIGIN}/$(basename ${MESSAGE}).smsg</link>
-		<guid>${TEMPLATE_ORIGIN}/$(basename ${MESSAGE}).smsg</guid>
+		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
+		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</item>
 EOF
 	} || {
 		cat << EOF
 	<item>
 		<title>${MESSAGE}</title>
-		<link>${TEMPLATE_ORIGIN}/$(basename ${MESSAGE}).smsg</link>
-		<guid>${TEMPLATE_ORIGIN}/$(basename ${MESSAGE}).smsg</guid>
+		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
+		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</guid>
 	</item>
 EOF
 	}
@@ -52,7 +52,7 @@ EOF
 # 	<image>
 # 		<title>${MESSAGE}</title>
 # 		<url>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</url>
-# 		<link>${TEMPLATE_ORIGIN}/$(basename ${MESSAGE}).smsg</link>
+# 		<link>${TEMPLATE_ORIGIN}/${MESSAGE}.smsg</link>
 # 		<guid>${TEMPLATE_ORIGIN}/${MESSAGE}</guid>
 # 	</image>
 # EOF
