@@ -26,8 +26,8 @@ jobs:
       - name: Generate static content.
         run:  make docs/feeds/main.sfd docs/index.html
         env:
-          DATABASE_ORIGIN: ${{ secrets.DATABASE_ORIGIN }} \
-          TEMPLATE_ORIGIN: ${{ secrets.TEMPLATE_ORIGIN }} \
+          DATABASE_ORIGIN: ${{ secrets.DATABASE_ORIGIN }}
+          TEMPLATE_ORIGIN: ${{ secrets.TEMPLATE_ORIGIN }}
           HUB_ORIGIN: ${{ secrets.HUB_ORIGIN }}
           AUTHOR: ${{ secrets.AUTHOR }}
 
