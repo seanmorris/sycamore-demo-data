@@ -1,0 +1,44 @@
+name: Generate
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - messages/**
+
+jobs:
+  generate:
+    name: Generate Feeds & Indexes
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: checkout.
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - run: echo "$PRIVATE_KEY" > .ssh/private-key.pem && chmod 600 .ssh/private-key.pem
+        shell: bash
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+      
+      - name: Generate static content.
+        run:  make docs/feeds/main.sfd docs/index.html
+        env:
+          DATABASE_ORIGIN: ${{ secrets.DATABASE_ORIGIN }} \
+          TEMPLATE_ORIGIN: ${{ secrets.TEMPLATE_ORIGIN }} \
+          AUTHOR: ${{ secrets.AUTHOR }}
+
+      - name: Add any newly created relevant files.
+        run:  git add ./docs/** ./ssh/public-key.pem
+
+      - name: Commit & push any if changes are found
+        run:  |
+          test -n "$(git status -s)" \
+            && git \
+              -c "user.name=index-bot" \
+              -c "user.email=index-bot@seanmorr.is" \
+              commit -nam 'Indexing messages.' \
+            && git push \
+            || true
