@@ -58,6 +58,4 @@ EOF
 
 cat << EOF
 </channel>
-</rss>
 EOF
-
