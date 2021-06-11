@@ -32,7 +32,7 @@ for MESSAGE in ${MESSAGES}; do {
 	[ $MIME = text ] && {
 		cat << EOF
 	<item>
-		<description>$( cat ${MESSAGE} | cut -c1-140 )</description>
+		<title>$( cat ${MESSAGE} | cut -c1-140 )</title>
 		<link>${DATABASE_ORIGIN}/${MESSAGE}.smsg</link>
 	</item>
 EOF
