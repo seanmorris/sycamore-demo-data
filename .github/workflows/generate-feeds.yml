@@ -32,7 +32,7 @@ jobs:
           AUTHOR: ${{ secrets.AUTHOR }}
 
       - name: Add any newly created relevant files.
-        run:  git add ./docs/** ./ssh/public-key.pem
+        run:  git add ./docs/** ./.ssh/public-key.pem
 
       - name: Commit & push any if changes are found
         run:  |
