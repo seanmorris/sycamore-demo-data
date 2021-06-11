@@ -9,15 +9,15 @@ all: docs/public-key.pem docs/contact-card.json docs/contact-card.json.smsg sign
 
 sign-messages: ${MESSAGE_TARGETS}
 
-docs/messages/%.smsg: messages/% docs/public-key.pem docs/contact-card.json docs/contact-card.json.smsg
-	mkdir -p ./docs/messages
-	bin/sign.sh $< > $@;
-
 docs/contact-card.json: docs/public-key.pem
 	bin/generate-contact-card.sh
 
 docs/contact-card.json.smsg: docs/contact-card.json
 	bin/sign.sh docs/contact-card.json > docs/contact-card.json.smsg
+
+docs/messages/%.smsg: messages/% docs/public-key.pem docs/contact-card.json docs/contact-card.json.smsg
+	mkdir -p ./docs/messages
+	bin/sign.sh $< > $@;
 
 docs/public-key.pem: .ssh/private-key.pem
 	bin/generate-public-key.sh
