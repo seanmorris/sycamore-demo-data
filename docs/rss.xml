@@ -7,58 +7,58 @@
 	<image>
 		<title>messages/hate-crap.jpg</title>
 		<url>https://sycamore.seanmorr.is/messages/hate-crap.jpg.smsg</url>
-		<link>https://sycamore.seanmorr.is/messages/hate-crap.jpg.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/hate-crap.jpg.smsg</guid>
+		<link>https://sycamore.seanmorr.is/hate-crap.jpg.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</image>
 	<item>
 		<title>hello crypto!!!</title>
-		<link>https://sycamore.seanmorr.is/messages/hello-crypto.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/hello-crypto.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/hello-crypto.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>Hello, world!</title>
-		<link>https://sycamore.seanmorr.is/messages/hello-world.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/hello-world.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/hello-world.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>dGVzdCBwb3N0</title>
-		<link>https://sycamore.seanmorr.is/messages/post-1623227310262.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/post-1623227310262.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/post-1623227310262.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>Test post</title>
-		<link>https://sycamore.seanmorr.is/messages/post-1623227459465.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/post-1623227459465.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/post-1623227459465.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>This is a test post.</title>
-		<link>https://sycamore.seanmorr.is/messages/post-1623227543116.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/post-1623227543116.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/post-1623227543116.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>UI test</title>
-		<link>https://sycamore.seanmorr.is/messages/post-1623350361674.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/post-1623350361674.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/post-1623350361674.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>i can make a post</title>
-		<link>https://sycamore.seanmorr.is/messages/post-1623351915716.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/post-1623351915716.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/post-1623351915716.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>Some text here.</title>
-		<link>https://sycamore.seanmorr.is/messages/test.txt.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/test.txt.smsg</guid>
+		<link>https://sycamore.seanmorr.is/test.txt.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>This is a post</title>
-		<link>https://sycamore.seanmorr.is/messages/post.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/post.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/post.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 	<item>
 		<title>TEST!!</title>
-		<link>https://sycamore.seanmorr.is/messages/TEST.md.smsg</link>
-		<guid>https://sycamore.seanmorr.is/messages/TEST.md.smsg</guid>
+		<link>https://sycamore.seanmorr.is/TEST.md.smsg</link>
+		<guid>https://sycamore.seanmorr.is/</guid>
 	</item>
 </channel>
 </rss>
